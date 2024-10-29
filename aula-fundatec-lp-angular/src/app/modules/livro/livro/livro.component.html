@@ -1,0 +1,15 @@
+<div style="display: flex; min-width: 400px; ">
+    <img flex="1" width="200px" height="300px" margin="10px" [src]="image" />
+    <div flex="2" class="data">
+        <div class="title">
+            Titulo: {{title}}
+        </div>
+        <div class="description">
+            Descrção: {{description}}
+        </div>
+        <div class="authors">
+            <p>Autores:
+           <li *ngFor="let author of authors" class="author">{{author}}</li>
+        </div>
+    </div>
+</div>

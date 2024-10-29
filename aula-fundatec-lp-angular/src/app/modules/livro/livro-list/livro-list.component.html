@@ -1,0 +1,12 @@
+<h1>Livros disponíveis</h1>
+
+<button (click)="adicionar()">adicionar Livro</button>
+<div style="display: flex;">
+    <app-livro *ngFor="let livro of livros"
+    [title]="livro.titulo"
+    [description]="livro.descricao"
+    [image]="livro.imagem"
+    [authors]="livro.autores"
+    >
+    </app-livro>
+</div>  X
